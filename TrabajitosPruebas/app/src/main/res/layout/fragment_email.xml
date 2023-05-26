@@ -50,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:hint="Email address"
+        app:startIconDrawable="@drawable/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +59,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

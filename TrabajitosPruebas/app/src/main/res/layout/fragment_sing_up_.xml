@@ -8,13 +8,15 @@
 
     <ImageView
         android:id="@+id/backgorund"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
         android:src="@drawable/background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
 
     <ImageView
         android:id="@+id/logo"
@@ -57,6 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:hint="Name"
+            app:startIconDrawable="@drawable/user"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_welcome">
@@ -75,6 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:hint="Contact Number"
+            app:startIconDrawable="@drawable/phone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/name_input">
@@ -94,6 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:hint="Email address"
+            app:startIconDrawable="@drawable/email"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/contact_input">
@@ -113,6 +118,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:hint="Password"
+            app:startIconDrawable="@drawable/locked"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/email_input">
