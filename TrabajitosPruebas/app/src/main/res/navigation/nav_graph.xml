@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.trabajitospruebas.ui.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_sing_up_Fragment"
+            app:destination="@id/sing_up_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.trabajitospruebas.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_sing_up_Fragment"
+            app:destination="@id/sing_up_Fragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sing_up_Fragment"
+        android:name="com.example.trabajitospruebas.ui.Sing_up_Fragment"
+        android:label="fragment_sing_up_"
+        tools:layout="@layout/fragment_sing_up_" >
+        <action
+            android:id="@+id/action_sing_up_Fragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.example.trabajitospruebas.ui.EmailFragment"
+        android:label="fragment_email"
+        tools:layout="@layout/fragment_email" >
+        <action
+            android:id="@+id/action_emailFragment_to_verificationFragment"
+            app:destination="@id/verificationFragment" />
+        <action
+            android:id="@+id/action_emailFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_emailFragment_to_verificationFragment2"
+            app:destination="@id/verificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verificationFragment"
+        android:name="com.example.trabajitospruebas.ui.VerificationFragment"
+        android:label="fragment_verification"
+        tools:layout="@layout/fragment_verification" >
+        <action
+            android:id="@+id/action_verificationFragment_to_new_Password_Fragment"
+            app:destination="@id/new_Password_Fragment" />
+        <action
+            android:id="@+id/action_verificationFragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/new_Password_Fragment"
+        android:name="com.example.trabajitospruebas.ui.New_Password_Fragment"
+        android:label="fragment_new__password_"
+        tools:layout="@layout/fragment_new__password_" >
+        <action
+            android:id="@+id/action_new_Password_Fragment_to_passwordChangedFragment"
+            app:destination="@id/passwordChangedFragment" />
+        <action
+            android:id="@+id/action_new_Password_Fragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordChangedFragment"
+        android:name="com.example.trabajitospruebas.ui.PasswordChangedFragment"
+        android:label="fragment_password_changed"
+        tools:layout="@layout/fragment_password_changed" >
+        <action
+            android:id="@+id/action_passwordChangedFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

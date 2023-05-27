@@ -15,10 +15,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="#030000FF"
+        android:contentDescription="back"
         android:src="@drawable/back_icon_foreground"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="back"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/forgot_text"
@@ -48,7 +48,7 @@
         android:layout_width="275dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/color_login"
+        android:backgroundTint="@color/blue_app"
         android:text="Verify code"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -66,7 +66,7 @@
         android:layout_marginBottom="64dp"
         android:backgroundTint="@color/white"
         android:text="Resend code"
-        android:textColor="@color/color_login"
+        android:textColor="@color/blue_app"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
