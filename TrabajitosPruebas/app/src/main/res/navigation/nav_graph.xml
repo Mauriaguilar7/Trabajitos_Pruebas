@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_loginFragment_to_emailFragment"
             app:destination="@id/emailFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_create_Portfolio_Fragment"
+            app:destination="@id/create_Portfolio_Fragment" />
     </fragment>
     <fragment
         android:id="@+id/sing_up_Fragment"
@@ -86,4 +89,9 @@
             android:id="@+id/action_passwordChangedFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/create_Portfolio_Fragment"
+        android:name="com.example.trabajitospruebas.ui.Create_Portfolio_Fragment"
+        android:label="fragment_create__portfolio"
+        tools:layout="@layout/fragment_create__portfolio" />
 </navigation>

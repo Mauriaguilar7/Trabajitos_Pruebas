@@ -30,6 +30,9 @@ class LoginFragment : Fragment() {
         binding.textForgotPassword.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_emailFragment)
         }
+        binding.loginButton.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_create_Portfolio_Fragment)
+        }
     }
 
 
